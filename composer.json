@@ -1,0 +1,29 @@
+{
+    "name": "ciftlikapp/laravel",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0",
+        "laravel/sanctum": "^3.2"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^7.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeders",
+            "database/factories"
+        ]
+    },
+    "scripts": {
+        "start": [
+            "php", "artisan", "serve"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
