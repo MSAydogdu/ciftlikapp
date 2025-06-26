@@ -11,20 +11,27 @@ Uygulama ile kullanıcılar:
 
 ## Başlangıç
 
-Bu depo yalnızca temel bir Node.js/Express tabanı içerir. Geliştiriciler uygulamayı genişleterek ihtiyaç duyulan özellikleri ekleyebilirler.
+Bu depo PHP tabanlı [Laravel](https://laravel.com/) çatısı ile geliştirilmek üzere hazırlanmıştır. Varsayılan veritabanı olarak Microsoft SQL Server kullanılacak şekilde örnek yapılandırma sağlanmıştır.
 
 ### Gereksinimler
 
-- Node.js 20+
+- PHP 8.1+
+- Composer
+- MSSQL sunucusu
+
 
 ### Kurulum
 
 ```bash
-npm install
-npm start
+composer install
+cp .env.example .env
+# .env dosyasında MSSQL bilgilerinizi düzenleyin
+php artisan key:generate
+php artisan serve
 ```
 
-`server.js` dosyası basit bir Express sunucusu çalıştırır ve geliştirmeye başlanacak noktayı temsil eder.
+`public/index.php` dosyası Laravel uygulamasını başlatır. Gerekli dizin yapısı oluşturulmuştur ancak bağımlılıkların yüklenmesi için `composer install` komutu çalıştırılmalıdır.
+
 
 ## Katkıda Bulunma
 
