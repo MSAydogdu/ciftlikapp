@@ -19,6 +19,7 @@ Bu depo PHP tabanlı [Laravel](https://laravel.com/) çatısı ile geliştirilme
 - Composer
 - MSSQL sunucusu
 
+
 ### Kurulum
 
 ```bash
@@ -30,6 +31,7 @@ php artisan serve
 ```
 
 `public/index.php` dosyası Laravel uygulamasını başlatır. Gerekli dizin yapısı oluşturulmuştur ancak bağımlılıkların yüklenmesi için `composer install` komutu çalıştırılmalıdır.
+
 
 ## Katkıda Bulunma
 
